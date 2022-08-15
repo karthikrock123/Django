@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'GLUGWebsite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME'    : 'GLUGWebsite',
+        'NAME'    : 'GLUG',
         'USER'    : 'postgres',
-        'PASSWORD': '1234',
+        'PASSWORD': '1010',
         'HOST'    : 'localhost',
-        'PORT'    : '5432' 
+        'PORT'    : '5432'
     }
 }
 import dj_database_url
@@ -121,14 +121,14 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [        
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
 STATIC_ROOT = os.path.join(BASE_DIR,'assets')
